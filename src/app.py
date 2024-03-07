@@ -8,6 +8,12 @@ load_dotenv()
 
 # 1) Connect to the database here using the SQLAlchemy's create_engine function
 
+import requests
+resource url = "https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue"
+response = requests.get(resource.url)
+
+
+
 # 2) Execute the SQL sentences to create your tables using the SQLAlchemy's execute function
 
 # 3) Execute the SQL sentences to insert your data using the SQLAlchemy's execute function
